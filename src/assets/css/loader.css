@@ -1,0 +1,41 @@
+div#load_screen{
+      /* background: rgb(236, 239, 255); */
+    opacity: 9;
+    position: fixed;
+    z-index: 999999;
+    top: 0px;
+    bottom: 0;
+    left: 100px;
+    right: 0;
+    width: 100%;
+}
+div#load_screen .loader {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+div#load_screen .loader-content {
+    right: 0;
+    align-self: center;
+}
+.spinner-grow {
+    color: #491414;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 5px;
+}
+@media (max-width: 769px) {
+    div#load_screen{
+      left: 0px;
+  }
+}
+
+/* <div id="load_screen" *ngIf="loader">
+<div class="loader">
+    <div class="loader-content">
+        <div class="spinner-grow align-self-center"></div>
+        <div class="spinner-grow align-self-center"></div>
+        <div class="spinner-grow align-self-center"></div>
+    </div>
+</div>
+</div> */

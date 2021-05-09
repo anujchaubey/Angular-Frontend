@@ -1,0 +1,14 @@
+<div *ngIf="showContent">
+    <router-outlet></router-outlet>
+</div>
+
+<app-headerbar *ngIf="showMenu"></app-headerbar>
+<div *ngIf="showMenu" class="main-container" id="container">
+    <div class="overlay"></div>
+    <div class="search-overlay"></div>
+    <app-sidebar></app-sidebar>
+    <div id="content" class="main-content">
+        <router-outlet></router-outlet>
+        <app-footerbar></app-footerbar>
+    </div>
+</div>
